@@ -1,0 +1,29 @@
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
+
+startup_message off
+defscrollback 30000
+altscreen on
+vbell off
+
+#bash config
+bindkey ^[[1;5D prev
+bindkey ^[[1;5C next
+
+
+screen -t build
+screen -t vim
+screen -t defect
+screen -t misc
+
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm-color "Co#256:AB=E[48;5;%dm:AF=E[38;5;%dm"
+termcapinfo xterm-256color "Co#256:AB=E[48;5;%dm:AF=E[38;5;%dm"
+
+term xterm-256color
+
+defbce "on"
+
+
+
